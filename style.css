@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+body{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(248,236,35,1) 48%, rgba(253,243,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.container {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 30px;
+}
+
+.container>*:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.fon{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding-bottom: 20px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25)
+}
+
+.title,
+.h2-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 40px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25)
+    
+}
+.h2-title {
+    font-size: 25px;
+}
+
+.title-block {
+    display: flex;
+}
+
+.title-foto {
+    flex: 0 0 30%;
+    margin-right: 50px;
+    background: url('01.jpg') 0 0px / cover no-repeat;
+    border-radius: 30px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25)
+}
+
+@media (max-width: 955px) {
+    .container {
+      margin: 0 20px;
+    }
+    .title-foto{
+        margin-right: 30px;
+    }
+  }
+
+.title-text {
+    padding: 20px;
+}
+
+.title-text>*:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.title-text_block {}
+
+.title-text_block_question {
+    margin-bottom: 7px;
+}
+
+.title-text_block_answer {
+    font-weight: bold;
+    text-align: justify;
+}
+
+.my-goals {}
+
+.my-goals ul li {
+    margin-bottom: 10px;
+}
+
+
+.time-to-learn {
+    
+}
+
+.courses {}
+
+.kontacts {}
+
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto; 
+}
+
+td {
+    border: 1px solid rgb(95, 95, 95);
+    padding: 10px; 
+    
+}
+
+.time-to-learn table tr td:nth-child(1){  
+    padding-right: 100px;     
+}
+
+.time-to-learn table td {
+    border: none;
+}
+
+.courses table {
+    text-align: center;
+}
+
+.courses table td { 
+    padding-left: 50px;
+    padding-right: 50px; 
+    border: none;
+
+}
+
+.courses table tr:nth-child(1) {
+    font-weight: bold;   
+}
+
+.courses table tr:nth-child(1) td{
+    border-bottom: 1px solid black;  
+      
+}
+
+.kontacts_items{
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 25%; 
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.item_logo{
+    text-align: center; 
+    margin-bottom: 10px;  
+}
+
+.item_logo img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    transition: all 0.3s ease 0s;
+}
+
+.item_logo img:hover {
+    transform: translate(0, -8px);
+    
+}
+
+.item_text{
+    text-align: center;
+}
